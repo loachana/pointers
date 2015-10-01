@@ -1,15 +1,15 @@
-#include <stdio.h> 
-int multiply(int x, int y);
+#include <stdio.h>
 
 
-int main(){
+int main(int argc, char *argv[]){
 	
-	int multiply(int x , int y){
-
-		return x*y;
-	}
-
-	printf("%d\n", multiply(3,5));
+	int i;
+	i = 1;
+	int *p = &i;
 	
-	return 0;
+	printf("i= %x\n", i);
+	printf("*p = %i\n", *p);
+	printf("&i = 0x%p\n", &i);
+	printf("p = %p\n", p);
+	return 0; 
 }
